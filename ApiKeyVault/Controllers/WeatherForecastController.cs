@@ -35,7 +35,7 @@ namespace ApiKeyVault.Controllers
         [HttpGet("keyvault")]
         public IActionResult GetSecret()
         {
-            string keyVaultUrl = "https://kvdemo87877.vault.azure.net/";
+            string keyVaultUrl = "https://yashsumankeyvault.vault.azure.net/";
             var client = new SecretClient(new Uri(keyVaultUrl), 
                 new DefaultAzureCredential());
             KeyVaultSecret secret = client.GetSecret("ApiKey");
